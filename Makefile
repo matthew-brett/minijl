@@ -1,3 +1,8 @@
+all: clean setup site serve
+
+setup:
+	pip install -r requirements.txt
+
 site:
 	jupyter lite init
 	jupyter lite build
